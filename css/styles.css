@@ -22,14 +22,14 @@ section {
 }
 
 /* --- HOVER DE SOMBREAMENTO GLOBAL --- */
-/* Adicionado .foto-perfil:hover aqui para seguir o padrão */
 .nav-link:hover, 
 .botao-cta:hover, 
 .card-tech:hover, 
 .projeto-card:hover, 
 .btn-projeto:hover,
 .btn-outline-primary:hover,
-.foto-perfil:hover {
+.foto-perfil:hover,
+.btn-cv:hover {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   transform: translateY(-5px);
   transition: all 0.3s ease;
@@ -86,7 +86,26 @@ section {
   border-radius: 50%;
   border: 8px solid var(--cor-principal);
   cursor: pointer;
-  transition: all 0.3s ease; /* Transição suave para o hover */
+  transition: all 0.3s ease;
+}
+
+/* --- BOTÃO CURRÍCULO (ATUALIZADO PARA ROSA) --- */
+.btn-cv {
+    background-color: var(--Destaque--botoes); /* Rosa da paleta */
+    color: white;
+    border-radius: 50px;
+    padding: 15px 40px; /* Um pouco maior para dar mais destaque */
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.btn-cv:hover {
+    background-color: #d13d88; /* Um rosa mais escuro para o hover */
+    color: white;
 }
 
 /* --- CARDS DE TECNOLOGIA --- */
